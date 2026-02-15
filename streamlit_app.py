@@ -300,6 +300,9 @@ if dataset_source == "Upload Custom Dataset(.csv)":
     uploaded_file = st.sidebar.file_uploader("Choose CSV file", type="csv", key="csv_upload", 
         help="Upload a CSV file with features and a target column for classification")
     
+    # Dataset location info
+    st.sidebar.markdown('<div style="font-size: 1.0rem; color: #64748b; padding: 8px; background-color: #f1f5f9; border-radius: 4px; border-left: 3px solid #3b82f6; margin: 5px 0;"><strong>Note:</strong> Sample dataset available for testing path:<br><code style="font-size: 0.95rem; color: #2563eb; background-color: #dbeafe; padding: 1px 4px; border-radius: 2px;">data\\raw\\breast-cancer-Wisconsin-data.csv</code></div>', unsafe_allow_html=True)
+    
     # Simple supported dataset link
     st.sidebar.markdown("📖 [Kaggle-Supported Dataset](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data)")
     
